@@ -1,4 +1,4 @@
-resource "aws_instance" "that" {
+resource "aws_instance" "this" {
   ami           = "ami-0fcc78c828f981df2"
   instance_type = "t3.micro"
 
