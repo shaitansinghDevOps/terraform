@@ -3,6 +3,6 @@ resource "aws_instance" "this" {
   instance_type = "t3.micro"
 
   tags = {
-    Name = "Created by Terraform"
+    Name = "My EC2 Instance for name update demo"
   }
 }
