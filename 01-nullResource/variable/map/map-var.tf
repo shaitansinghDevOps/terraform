@@ -33,5 +33,9 @@ variable "map_of_maps" {
       broccoli = "A green vegetable"
     }
   }
+
+}
+output "map_of_maps_output" {
+  value = "this is the apple value ${var.map_of_maps["fruits"]["apple"]}"
 }
 
