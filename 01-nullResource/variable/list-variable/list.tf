@@ -10,3 +10,6 @@ output "list_output" {
 output "first_element" {
   value = var.list[0]
 }
+output "second_element" {
+  value = "my favorite fruit is ${var.list[1]}"
+}
