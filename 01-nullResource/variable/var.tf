@@ -1,11 +1,8 @@
 variable "cityName" {
   type        = string
-  default     = ""
-  description = "the name of the city"
+  description = "Enter the city name"
 }
 
 output "printedCityName" {
-    value = var.cityName
-
+  value = var.cityName
 }
-
