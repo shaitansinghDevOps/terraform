@@ -6,3 +6,7 @@ variable "list" {
 output "list_output" {
   value = var.list
 }
+
+output "first_element" {
+  value = var.list[0]
+}
