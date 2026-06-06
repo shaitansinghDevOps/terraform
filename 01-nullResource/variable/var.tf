@@ -4,8 +4,8 @@ variable "cityName {
   description = "the name of the city"
 }
 
-output name {
+output "printedCityName" {
     value = var.cityName
-    
+
 }
 
