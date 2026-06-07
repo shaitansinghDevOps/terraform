@@ -1,8 +1,9 @@
 resource "aws_instance" "that" {
-  ami           = "ami-0fcc78c828f981df2"
-  instance_type = "t3.micro"
+  count         = lenght(var.component)
+  ami           = var.ami_id
+  instance_type = var.instance_type
 
   tags = {
-    Name = "My EC2 Instance for name update demo"
+    Name = var.component[count.index]
   }
 }
